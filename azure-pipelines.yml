@@ -2,11 +2,9 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  imageName: 'captureorder:$(Build.BuildId)'
-  group: acr
-  acrName: '$(acrName)'
-  dockerId: '$(dockerId)'
-  dockerPassword: '$(dockerPassword)'
+- name: imageName
+  value: 'captureorder:$(Build.BuildId)'
+- group: acr-variables
   # define three more variables acrName, dockerId and dockerPassword in the build pipeline in UI
 
 steps:
