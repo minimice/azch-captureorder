@@ -3,6 +3,7 @@ pool:
 
 variables:
   imageName: 'captureorder:$(Build.BuildId)'
+  group: acr
   # define three more variables acrName, dockerId and dockerPassword in the build pipeline in UI
 
 steps:
